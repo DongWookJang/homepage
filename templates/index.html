@@ -1,0 +1,24 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+{% block title %}{% endblock %}
+
+{% block style %}
+#wrapper { width: auto;}
+#qmenu {list-style: none; padding: 0; word-spacing: 15px;
+        float: right; margin-right: 15px; margin-top: 10px}
+#qmenu { display: inline-block;}
+
+#qmenu li:last-child { font-size:50px; }
+{% endblock %}
+
+{% block content %}{% endblock %}
+
+{% block script %}
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+{% endblock %}
